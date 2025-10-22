@@ -10,5 +10,6 @@ public class BookingRequest {
     private Long roomId;
     private LocalDate startDate;
     private LocalDate endDate;
+    private String correlationId;
 }
 
