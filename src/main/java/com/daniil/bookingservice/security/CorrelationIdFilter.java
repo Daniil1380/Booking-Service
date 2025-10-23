@@ -1,4 +1,4 @@
-package com.daniil.bookingservice;
+package com.daniil.bookingservice.security;
 
 import jakarta.servlet.*;
 import org.slf4j.MDC;

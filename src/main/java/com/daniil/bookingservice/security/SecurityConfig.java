@@ -1,4 +1,4 @@
-package com.daniil.bookingservice;
+package com.daniil.bookingservice.security;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;

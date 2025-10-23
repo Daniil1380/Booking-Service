@@ -1,4 +1,4 @@
-package com.daniil.bookingservice;
+package com.daniil.bookingservice.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

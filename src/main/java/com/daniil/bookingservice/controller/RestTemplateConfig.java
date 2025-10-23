@@ -1,4 +1,4 @@
-package com.daniil.bookingservice;
+package com.daniil.bookingservice.controller;
 
 import jakarta.ws.rs.core.HttpHeaders;
 import org.springframework.boot.web.client.RestTemplateBuilder;

@@ -1,4 +1,4 @@
-package com.daniil.bookingservice;
+package com.daniil.bookingservice.security;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtException;
