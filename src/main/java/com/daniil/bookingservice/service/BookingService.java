@@ -16,21 +16,6 @@ import java.time.LocalDateTime;
 import java.util.Optional;
 import java.util.UUID;
 
-import com.daniil.bookingservice.dto.BookingRequest;
-import com.daniil.bookingservice.entity.Booking;
-import com.daniil.bookingservice.entity.BookingStatus;
-import com.daniil.bookingservice.repository.BookingRepository;
-import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.client.RestTemplate;
-
-import java.time.LocalDateTime;
-import java.util.Optional;
-import java.util.UUID;
-
 @Slf4j
 @Service
 @RequiredArgsConstructor
@@ -79,7 +64,7 @@ public class BookingService {
         return booking;
     }
 
-    private Booking saveBooking(Long userId, Long roomId, BookingRequest request, BookingStatus status, String correlationId) {
+    Booking saveBooking(Long userId, Long roomId, BookingRequest request, BookingStatus status, String correlationId) {
         Booking booking = Booking.builder()
                 .userId(userId)
                 .roomId(roomId)
